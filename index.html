@@ -1,16 +1,4 @@
-book = {}  # この行は直さないでください
-
-# ファイルinput/room.csvを開いて、集計
-with open('input/room.csv', encoding='utf-8') as f:
-    for row in f:
-        colums = row.rstrip().split(',')
-        room = colums[0]
-
-    if room in book:
-        book[room] += 1
-    else:
-        book[room] = 1
-
-# 表示
-for room_name, count in book.items():
-    print(room_name + ':' + str(count))
+<<h1>Gitチュートリアル</h1>
+<p>git status</p>
+<p>git diff</p>
+<p>git commit --amend</p>
